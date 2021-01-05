@@ -7,17 +7,6 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="song1Bean"
-          class="org.training.RockMusic">
-    </bean>
-    <bean id="song2Bean"
-          class="org.training.ClassicalMusic">
-    </bean>
-
-    <bean id="musicPlayer"
-          class="org.training.MusicPlayer">
-        <constructor-arg ref="song1Bean"/>
-        <property name="song2" value="simple value"/>
-    </bean>
+    <context:component-scan base-package="org.training" />
 
 </beans>
