@@ -17,7 +17,7 @@
     <bean id="musicPlayer"
           class="org.training.MusicPlayer">
         <constructor-arg ref="song1Bean"/>
-        <property name="song2" ref="song2Bean"/>
+        <property name="song2" value="simple value"/>
     </bean>
 
 </beans>
